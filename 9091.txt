@@ -1,0 +1,6 @@
+table_set_default ARPRouting _drop
+table_add ARPRouting setOutput 10.0.0.10 10.0.0.11 => 1
+table_add ARPRouting setOutput 10.0.0.11 10.0.0.10 => 2
+table_set_default IPv4Routing _drop
+table_add IPv4Routing setOutput 10.0.0.10 10.0.0.11 => 1
+table_add IPv4Routing setOutput 10.0.0.11 10.0.0.10 => 2
